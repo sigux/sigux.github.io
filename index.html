@@ -136,7 +136,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/04/10/Github%20pages+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">Github Pages + HEXO + Node.js����˲���</a>
+      <a class="p-name article-title" href="/2021/04/10/Github%20pages+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">Github Pages + HEXO + Node.js搭建个人博客</a>
     </h1>
   
 
@@ -144,7 +144,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="ϵͳ׼��"><a href="#ϵͳ׼��" class="headerlink" title="ϵͳ׼��"></a>ϵͳ׼��</h2><p>1.��װGit</p>
+        <h2 id="系统准备"><a href="#系统准备" class="headerlink" title="系统准备"></a>系统准备</h2><p>1.安装Git</p>
 <blockquote>
 <p>Installing Hexo is quite easy and only requires the following beforehand:</p>
 <ul>
@@ -153,30 +153,30 @@
 </ul>
 </blockquote>
 <ol start="2">
-<li>��װNode.js <blockquote>
-<p>If you use the official installer, make sure Add to PATH is checked (it��s checked by default).</p>
+<li>安装Node.js <blockquote>
+<p>If you use the official installer, make sure Add to PATH is checked (it’s checked by default).</p>
 </blockquote>
 </li>
 </ol>
 <ol start="3">
-<li><p>��װHEXO<br>�������Ҽ������<code>Git Bash Here</code>��<a target="_blank" rel="noopener" href="https://hexo.io/">HEXO</a>����ʾGit��װ��� <code>$ npm install -g hexo-cli</code>��<br>��Ļ��ʾ<br><code>+ hexo-cli@0.0.0</code>��ʽ��˵����װ�ɹ���<br>�˳�Git��</p>
+<li><p>安装HEXO<br>在桌面右键，点击<code>Git Bash Here</code>。<a target="_blank" rel="noopener" href="https://hexo.io/">HEXO</a>会显示Git安装语句 <code>$ npm install -g hexo-cli</code>。<br>屏幕显示<br><code>+ hexo-cli@0.0.0</code>格式，说明安装成功。<br>退出Git。</p>
 </li>
-<li><p>�������˲����ļ���<br>�½����˲����ļ�����blog��ȷ���ļ���Ϊ�ա����ȣ�����blog�ļ��г�ʼ�������ļ��У�����Ҽ���ѡ��<code>Git Bash Here</code>������<br><code>hexo init</code><br>��ʼ����ɺ�blog�ļ����л�����Ӧ���ļ�Ŀ¼����Ҫ�䶯����������<br><code>hexo install</code><br>��װ�ɹ��󣬼������루��װ�������<br><code>npm install hexo-deployer-git --save</code><br>��ʾ<code>+ hexo-deployer-git@3.0.0</code>��ʾ��װ�ɹ���</p>
+<li><p>建立个人博客文件夹<br>新建个人博客文件夹如blog，确保文件夹为空。首先，进行blog文件夹初始化，打开文件夹，点击右键，选择<code>Git Bash Here</code>，输入<br><code>hexo init</code><br>初始化完成后，blog文件夹中会有相应的文件目录，不要变动，继续输入<br><code>hexo install</code><br>安装成功后，继续输入（安装插件），<br><code>npm install hexo-deployer-git --save</code><br>显示<code>+ hexo-deployer-git@3.0.0</code>表示安装成功。</p>
 </li>
-<li><p>��Github������github.io�ֿ�<br>����username.github.io�ֿ⣬���<code>Clone</code>�˵���ѡ��<code>SSH</code>���������ݡ��ص���ʼ������װ��hexo�Ĳ����ļ��У�ʹ��Notepad��config.yml��<br>�������ļ�ĩβdeployment����д�������ݣ�</p>
+<li><p>打开Github，创建github.io仓库<br>创建username.github.io仓库，点击<code>Clone</code>菜单，选择<code>SSH</code>，复制内容。回到初始化并安装好hexo的博客文件夹，使用Notepad打开config.yml。<br>滚动至文件末尾deployment，填写如下内容：</p>
 <blockquote>
-<p>  type: git<br> repo: <a href="mailto:&#x67;&#105;&#116;&#x40;&#103;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#111;&#x6d;">&#x67;&#105;&#116;&#x40;&#103;&#x69;&#116;&#104;&#x75;&#98;&#46;&#x63;&#111;&#x6d;</a>:username/username.github.io.git<br> branch : master</p>
+<p>  type: git<br> repo: <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#x6d;">&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#x6d;</a>:username/username.github.io.git<br> branch : master</p>
 </blockquote>
 </li>
 </ol>
 <ol start="6">
-<li>����hexo������github<br>��git������<br><code>hexo g -d</code></li>
+<li>部署hexo博客至github<br>在git中输入<br><code>hexo g -d</code></li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://sigux.github.io/2021/04/10/Github%20pages+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ckncoqtr400009st30fruakzf" data-title="Github Pages + HEXO + Node.js����˲���" class="article-share-link">Share</a>
+      <a data-url="https://sigux.github.io/2021/04/10/Github%20pages+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ckncoqtr400009st30fruakzf" data-title="Github Pages + HEXO + Node.js搭建个人博客" class="article-share-link">Share</a>
       
       
       
@@ -223,7 +223,7 @@
           </li>
         
           <li>
-            <a href="/2021/04/10/Github%20pages+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">Github Pages + HEXO + Node.js����˲���</a>
+            <a href="/2021/04/10/Github%20pages+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">Github Pages + HEXO + Node.js搭建个人博客</a>
           </li>
         
       </ul>
