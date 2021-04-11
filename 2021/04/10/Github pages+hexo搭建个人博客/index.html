@@ -14,7 +14,7 @@
 <meta property="og:description" content="系统准备1.安装Git  Installing Hexo is quite easy and only requires the following beforehand:  Node.js(Should be at least Node.js 10.13, recommends 12.0 or higher) Git    安装Node.js  If you use the official i">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-04-10T14:05:05.537Z">
-<meta property="article:modified_time" content="2021-04-11T04:51:59.318Z">
+<meta property="article:modified_time" content="2021-04-11T05:04:42.551Z">
 <meta property="article:author" content="sigux">
 <meta name="twitter:card" content="summary">
   
@@ -116,12 +116,16 @@
 </li>
 <li><p>打开Github，创建github.io仓库<br>创建username.github.io仓库，点击<code>Clone</code>菜单，选择<code>SSH</code>，复制内容。回到初始化并安装好hexo的博客文件夹，使用Notepad打开config.yml。<br>滚动至文件末尾deployment，填写如下内容：</p>
 <blockquote>
-<p>  type: git<br> repo: <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#x6d;">&#103;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#111;&#x6d;</a>:username/username.github.io.git<br> branch : master</p>
+<p>  type: git<br> repo: <a href="mailto:&#103;&#105;&#x74;&#64;&#103;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#x6f;&#x6d;">&#103;&#105;&#x74;&#64;&#103;&#105;&#116;&#x68;&#117;&#98;&#46;&#99;&#x6f;&#x6d;</a>:username/username.github.io.git<br> branch : master</p>
 </blockquote>
 </li>
 </ol>
 <ol start="6">
 <li>部署hexo博客至github<br>在git中输入<br><code>hexo g -d</code></li>
+</ol>
+<h2 id="问题汇总"><a href="#问题汇总" class="headerlink" title="问题汇总"></a>问题汇总</h2><ol>
+<li>输入<code>hexo server</code>，可以看到blog在localserver中的显示。如果不正确需要重新配置。</li>
+<li>输入<code>hexo g -d</code>，完成生成和部署后，可点击github.io网址，若看到的是readme.md内容，则需要在Github中<code>Github Pages</code>设置中将default branch设置为master，与hexo配置保持一致。</li>
 </ol>
 
       
